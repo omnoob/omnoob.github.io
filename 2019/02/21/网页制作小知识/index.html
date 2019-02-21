@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="omblog">
 <meta property="og:description" content="关于导航栏：让导航栏横过来（横向结构）（浮动？）当页面出现布局bug，就使用border大法！border: 1px solid red; 1像素的实心的红色边框在li标签中加float标签，在ul标签中加clearfix，并且在css中添加三句代码：首先在所有的子元素上加float：left，在这些子元素的爸爸加class=“clearfix”，并且在css中添加三句代码：12345.clea">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-21T14:52:59.559Z">
+<meta property="og:updated_time" content="2019-02-21T14:56:09.724Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网页制作小知识">
 <meta name="twitter:description" content="关于导航栏：让导航栏横过来（横向结构）（浮动？）当页面出现布局bug，就使用border大法！border: 1px solid red; 1像素的实心的红色边框在li标签中加float标签，在ul标签中加clearfix，并且在css中添加三句代码：首先在所有的子元素上加float：left，在这些子元素的爸爸加class=“clearfix”，并且在css中添加三句代码：12345.clea">
@@ -115,14 +115,24 @@
 <li>强制触发悬停特效：开发者工具-点击对应位置-点hov-点：hover 即可，被强制触发悬停特效的代码左边会有个黄色的圆</li>
 <li><code>padding</code> 内边距: padding-top padding-bottom<br><code>border</code>  边框<br><code>margin</code>  外边框                                                 </li>
 <li>如果a标签比li标签高，就是li没有包住a<br>解决方法：在a里面写 <code>display:block;</code><br>所以没有什么内联元素和块级元素；所有的元素既可以是内联元素也可以是块级元素。</li>
-<li>去除a标签的蓝色：  <pre><code>a{color: inherit}
-</code></pre>inherit 继承;<br>爸爸（祖宗）什么颜色，它就继承什么颜色。有些元素能继承，有些不能。color能，其他的遇到再说  </li>
+<li><p>去除a标签的蓝色：  </p>
+<pre><code>a{color: inherit}
+</code></pre><p>inherit 继承;<br>爸爸（祖宗）什么颜色，它就继承什么颜色。有些元素能继承，有些不能。color能，其他的遇到再说  </p>
+</li>
+<li><p>如果没有inherit，a标签是有默认颜色。 <code>user agent stylesheet</code> 用户浏览器的颜色  </p>
+</li>
+<li><p><code>font-family</code> 字体 <code>font-size</code> 字号大小  </p>
+</li>
+<li><p><code>.topNavBar .logo .card</code> 和 <code>.topNavBar&gt;a&gt;span</code> 的区别  </p>
+</li>
+<li><p>例如span和span中有看不到的回车或者空格，浏览器会变成一个空格：只需要删除即可。如果还想留点距离，那就在前一个span的css中加入 <code>margin-right =4px;</code> 就是加入有边框  </p>
+</li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/02/21/网页制作小知识/" data-id="cjseqxsy00001n0whad2acab4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/02/21/网页制作小知识/" data-id="cjser1tmf00031wwhmv5krtb7" class="article-share-link">Share</a>
       
       
     </footer>
