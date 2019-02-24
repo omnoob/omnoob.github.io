@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>网页制作小知识 | omblog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="关于导航栏：让导航栏横过来（横向结构）（浮动？）当页面出现布局bug，就使用border大法！border: 1px solid red; 1像素的实心的红色边框在li标签中加float标签，在ul标签中加clearfix，并且在css中添加三句代码：首先在所有的子元素上加float：left，在这些子元素的爸爸加class=“clearfix”，并且在css中添加三句代码：12345.clea">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网页制作小知识">
+<meta property="og:url" content="http://yoursite.com/2019/02/24/网页制作小知识/index.html">
+<meta property="og:site_name" content="omblog">
+<meta property="og:description" content="关于导航栏：让导航栏横过来（横向结构）（浮动？）当页面出现布局bug，就使用border大法！border: 1px solid red; 1像素的实心的红色边框在li标签中加float标签，在ul标签中加clearfix，并且在css中添加三句代码：首先在所有的子元素上加float：left，在这些子元素的爸爸加class=“clearfix”，并且在css中添加三句代码：12345.clea">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-02-24T14:22:57.887Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="网页制作小知识">
+<meta name="twitter:description" content="关于导航栏：让导航栏横过来（横向结构）（浮动？）当页面出现布局bug，就使用border大法！border: 1px solid red; 1像素的实心的红色边框在li标签中加float标签，在ul标签中加clearfix，并且在css中添加三句代码：首先在所有的子元素上加float：left，在这些子元素的爸爸加class=“clearfix”，并且在css中添加三句代码：12345.clea">
+  
+    <link rel="alternate" href="/atom.xml" title="omblog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">omblog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-网页制作小知识" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/24/网页制作小知识/" class="article-date">
+  <time datetime="2019-02-24T14:22:34.000Z" itemprop="datePublished">2019-02-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      网页制作小知识
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>关于导航栏：让导航栏横过来（横向结构）（浮动？）<br>当页面出现布局bug，就使用border大法！<br><code>border: 1px solid red;</code> 1像素的实心的红色边框<br>在li标签中加float标签，在ul标签中加clearfix，并且在css中添加三句代码：<br>首先在所有的子元素上加<code>float：left</code>，在这些子元素的爸爸加<code>class=“clearfix”</code>，并且在css中添加三句代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.clearfix::after&#123;</span><br><span class="line">    content: &apos;&apos;;</span><br><span class="line">    display: block;</span><br><span class="line">    clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>clearfix写法很多，就背这个就好，这个必须会背，就可以解决页面布局问题。</p>
+<ol start="2">
+<li>如果去除列表前面的黑点：在ul中加入 <code>style=&quot;list-style: none;&quot;</code>  </li>
+<li><p>如何去除列表的默认样式：在ul中加入 <code>style=&quot;margin: 0;padding: 0;&quot;</code>  </p>
+</li>
+<li><p>选择器：<code>&gt;</code> 表示儿子</p>
+</li>
+<li><p>开发者工具： styles 表示样式； computed 表示计算出来的样式： 考点！！！</p>
+</li>
+<li><code>font-size: 12px;</code> px是像素</li>
+<li>常识： 不同操作系统对相同颜色的字的渲染是不一样的，会出现虚边，直接用取色工具会不准确。<br>a.直接抄源代码上写的颜色<br>b.问设计师</li>
+<li>去除下划线：<code>text-decoration: none;</code>  decoration: 装饰</li>
+<li>如果不知道一个东西的取值：<br>a.查MDN<br>b.直接在开发者工具里对应位置styles中修改代码；各种样式都有，可以试出来</li>
+<li>修改间距：<code>margin-left: xxpx; margin-right: xxpx;</code> 经验之谈：写在li里</li>
+<li>加粗 <code>font-weight: bold;</code></li>
+<li><p>鼠标悬停出现边框：在对应位置比如： <code>.topNavBar&gt;nav&gt;ul&gt;li&gt;a</code>是对应位置，那就再写一个  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.topNavBar&gt;nav&gt;ul&gt;li&gt;a:hover&#123; </span><br><span class="line">border: 1px solid red; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解决鼠悬停时位置发生变化：因为出现了边框占用位置所以才移动，所以干脆在原本上加上透明的边框，当当当！ <code>border-bottom: 3px solid transparent;</code> transparent 透明  </p>
+</li>
+<li><p>把边框只保留下面就像下划线一样：把<code>border</code> 变成 <code>border-bottom</code> 。 bottom：底部</p>
+</li>
+<li>强制触发悬停特效：开发者工具-点击对应位置-点hov-点：hover 即可，被强制触发悬停特效的代码左边会有个黄色的圆</li>
+<li><code>padding</code> 内边距: padding-top padding-bottom<br><code>border</code>  边框<br><code>margin</code>  外边框                                                 </li>
+<li>如果a标签比li标签高，就是li没有包住a<br>解决方法：在a里面写 <code>display:block;</code><br>所以没有什么内联元素和块级元素；所有的元素既可以是内联元素也可以是块级元素。</li>
+<li><p>去除a标签的蓝色：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line">a&#123;color: inherit&#125;</span><br><span class="line">```  </span><br><span class="line">inherit 继承;  </span><br><span class="line">爸爸（祖宗）什么颜色，它就继承什么颜色。有些元素能继承，有些不能。color能，其他的遇到再说  </span><br><span class="line"></span><br><span class="line">19. 如果没有inherit，a标签是有默认颜色。 `user agent stylesheet` 用户浏览器的颜色  </span><br><span class="line"></span><br><span class="line">20. `font-family` 字体 `font-size` 字号大小  字体可以导入，也可直接在word里比较，看着差不多的就可以用</span><br><span class="line"></span><br><span class="line">21. 当css选择器过于简单 比如`.card` ，我只想改变`topNavBar`中的`logo`的`card`，但是这样写却影响到了别的地方的`card`，所以要把选择器写的详细一点</span><br><span class="line">   要学会理解继承，比如`logo`下`的r`s和`card`都是一样的大小，字体，那就把他们都写在logo就好啦</span><br><span class="line"></span><br><span class="line">22. `.topNavBar .logo .card` 和 `.topNavBar&gt;a&gt;span` 的区别  （注意前者的空格）</span><br><span class="line"></span><br><span class="line">23. 例如span和span中有看不到的回车或者空格，浏览器会变成一个空格：只需要删除即可。如果还想留点距离，那就在前一个span的css中加入 `margin-right =4px;` 就是加入有边框  </span><br><span class="line">   - 比如RS card 在`.topNavBar .logo .rs`中写入` margin-right =4px;` 右边框4像素</span><br><span class="line">   </span><br><span class="line">24. 理解对齐:  </span><br><span class="line">  - 横向，只要大家高度一样就是对齐了  </span><br><span class="line">  -  居中：实际上很多时候只需要一边，比如本次只需要用到下边框，但是为了对齐，还加入了上边框。颜色设置为透明即可。</span><br><span class="line"></span><br><span class="line">25. 一般是不要body默认的边距，写： `margin 0；`</span><br><span class="line"></span><br><span class="line">26. 四个padding合一合并为一个，顺序为：padding: 上 右 下 左;</span><br><span class="line"></span><br><span class="line">27. `.xxx &#123;text-align: center;&#125;` 的作用是？ 让 .xxx 子代中的内联元素居中</span><br><span class="line"></span><br><span class="line">28. **核心知识： 一个元素的高度是由内部文档流的高度决定的（决定不是相等）**</span><br><span class="line">   </span><br><span class="line">&amp;nbsp; &amp;nbsp; **1.文档流（Normal Flow）：文档内元素的流动方向** （ float:left、position:fixed、position:absolute 都能使元素脱离文档流）  </span><br><span class="line">- **内联元素从左往右流动，如果流动受到阻碍（宽度不够），就另起一行继续从左往右流动**。    </span><br><span class="line">-- 1.span中有border，如果遇到阻碍，border不会补全。  </span><br><span class="line">-- 2.span中的英文遇到阻碍不会换行，可以加 `word-break: break-all;` 使其能正常换行：中文网站中还常用 `word-break: break-word;` 单词和单词之间可以分开  </span><br><span class="line">- **块级元素各占一行，从上往下流动**  </span><br><span class="line"> display: inline-block; 如果空间够就可以让块与块在同一行，但是不好！！！！尽量用float，clearfix  </span><br><span class="line"></span><br><span class="line"> &amp;nbsp; &amp;nbsp; **2.div（块级元素） 高度由其内部文档流元素 的高度 总和决定（决定不是相等）**  </span><br><span class="line">- **span（内联元素）高度由字体和字体相关的设计师设计的参数决定**，所以涉及到内联元素，高度不可测，所以要强行设置高度   height： xxpx; 实际上应用是用line-height：xxpx; 可以确定内联元素高度  </span><br><span class="line">-- 例如我们想得到40px的div，line-height: 24px; padding: 6px;  </span><br><span class="line">29. -- 文字的对齐是 基线 对齐  </span><br><span class="line">    -- 建议行高：取决于字体 font-family  </span><br><span class="line">	-- font-size: 100px; 指的是字体最高的地方到最低的地方的距离（hug就是h上面的高度到g下面的距离是100px），然而span的高度比100还大，是因为有建议行高。  </span><br><span class="line">	-- 可以使用 line-height 来固定行高。  </span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">30. 脱离文档流：父元素的高度就不再包括脱离文档流的元素 position  </span><br><span class="line">    &amp;nbsp; &amp;nbsp; -- 实际尽量不要写height：xxpx; 也尽量不要写 width：xx%； 因为都会出现问题，只有在迫不得已才写。</span><br><span class="line">	</span><br><span class="line">31. 让导航栏叠在背景上：.topNavBar&#123;position： fixed&#125; 但是宽度会缩起来 解决方法：width 100%;  </span><br><span class="line">   -  但是也有bug，比如边缘的内容都快看不到了：比如body本身宽1000px，使用了这条代码，这个元素也宽1000px，但是这个元素还有padding，所以它比body还宽  </span><br><span class="line">	- 解决width 100%;方法(套路)：再加一个div，topNavBar是重叠在背景上，而topNavBar的宽样式挪到新的div（topNavBar-inner）中  </span><br><span class="line">	-- 1.使.topNavBar中的左右padding为0px；  </span><br><span class="line">-- 2.加入新的div（topNavBar-inner）包裹住a标签和nav标签，同时修改选择器的指向（把.topNavBar&gt;nav等的&gt;改为空格）和clearfix的位置（把topNavBar中的clearfix挪到topNavBar-inner中）  </span><br><span class="line">-- 3. `.topNavBar-inner&#123;padding: 0px 16px 0px 16px;&#125;`</span><br><span class="line"></span><br><span class="line">32. 例子背景比目前的背景要黑一层，那就用一个纯样式的半透明黑色div.mask mask 掩盖，遮罩</span><br><span class="line">   `.banner .mask&#123;background-color: rgba(0,0,0,0.8);&#125; ` 前面三个都是0，什么颜色都没有，就是黑色。 后面0.8 是百分比</span><br><span class="line">   </span><br><span class="line">33. 使div背景图片居中： `background-position: center center;`第一个center是水平居中，第二个是垂直居中  </span><br><span class="line"></span><br><span class="line">    使div背景图按比例缩放：`background-size: cover;`  cover 覆盖</span><br><span class="line"></span><br><span class="line">34. 一般宽度都是自适应，需要设置宽度的时候，，可以用max-width: 940px;这样也可以自适应，最大也不超过设定的宽度  最好不要写 width：xx%; 因为会出问题</span><br><span class="line"></span><br><span class="line">35. div居中的小套路：`margin-left: auto; margin-right: auto;`</span><br><span class="line"></span><br><span class="line">36. 内联元素不接受设置宽高：解决方法：`display: inline-block; width: 70px; height: 29px;`</span><br><span class="line"></span><br><span class="line">37. 但是这样设置宽高有隐藏的bug，可以换个思路: 可以设置边距：`padding: 4px 16px 4px 16px;`  </span><br><span class="line">在css中尽量bug少，就不要用宽高</span><br><span class="line"></span><br><span class="line">38. 常考：  如何用css画一个三角形？ （套路） 多看看视频，多练习几遍 或者搜索 `css tricks shape`</span><br></pre></td></tr></table></figure>
+<p>div{</p>
+<pre><code>border: 10px solid transparent;
+width: 0px;
+border-left-color: #E6686A;
+border-top-width: 0px;
+</code></pre><p>   }</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">39. 绝对定位：脱离文档流，但是还在原来的位置 （套路）  </span><br><span class="line">    1.在子元素上写 position: absolute;  </span><br><span class="line">	2.在父元素上写 position: relative;  </span><br><span class="line">	意思就是1元素相对于2元素的定位</span><br><span class="line"></span><br><span class="line">40. 一般span里是不放div的，可以span里加个`display: block; `就是一个div</span><br><span class="line"></span><br><span class="line">41. 让三角形在外面左下角还有一点空隙：    `left: 4px; top: 100%;` 左边距离4像素，高度是100%这样就可以刚刚好贴着下边缘</span><br><span class="line"></span><br><span class="line">42. 常用技巧：外面div不能加padding，那就在里面div加</span><br><span class="line"></span><br><span class="line">43.中间图片右边的分割线短：因为float会收缩，外面就给个宽度就好</span><br><span class="line"></span><br><span class="line">44. 调整hello 姓名 的距离：因为 姓名 的margin单位是em，不知道是多少像素，所以还是加在hello上</span><br><span class="line"></span><br><span class="line">45. 合并：因为这个span是`display: inline-block;` 所以不合并    （先记住吧）</span><br><span class="line"></span><br><span class="line">46. 调整卡片里文字的格式： 先全加float，然后设置宽度即可成型</span><br><span class="line"></span><br><span class="line">47. 工具网站 `iconfont.cn`</span><br><span class="line">   svg的语法：width height fill(颜色)</span><br></pre></td></tr></table></figure>
+<p>.userCard svg{<br>   width: 30px;<br>   height: 30px;<br>   fill: white;<br>   vertical-align: top;  /<em>使上下空隙一样 （先记忆）</em>/<br>}<br><code>`</code></p>
+</li>
+<li><p>让三个图标居中 再三个a标签的父元素media里写 <code>text-align: center;</code></p>
+</li>
+<li><p>用圆圈住图标：<br>1.把矩形变成圆 <code>border-radius: 50%;</code><br>2.让圆变大<br><code>width: 40px;</code><br><code>/*height: 40px;*/</code><br><code>line-height: 30px;</code><br>3.让图标居中   因为写了heigh ，所以出bug，这里就不写高度，我们直接用padding代替,因为行高是30px，所以padding上下是5px即可达到40px：<code>padding: 5px 0;</code> </p>
+</li>
+<li><p>最后再调整一下高度就好</p>
+</li>
+<li><p>CSS position 5个权值：sticky fixed absolute relative static</p>
+</li>
+<li><p>CSS 中 width 的默认值是auto 即自动调节</p>
+</li>
+<li><p>content-box 与 border-box 的区别是：  content-box 的 width 不包括 padding 和 border<br>理论上说，content-box与border-box区别是两者的盒子的宽度是否包含表框和内边距  </p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/02/24/网页制作小知识/" data-id="cjsj075470004bcwhy9s70iln" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/02/20/CSS入门/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">CSS入门</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/02/24/网页制作小知识/">网页制作小知识</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/20/CSS入门/">CSS入门</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/19/IP知识小结/">IP知识小结</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/08/HTTP入门/">HTTP入门</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/05/Git新手教程/">Git新手教程</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 OM<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
